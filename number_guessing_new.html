@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+    <head>
+        <title>Number Guessimg Game</title>
+        <meta charset="utf-8"/>
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+
+            h1 {font-size: 5em; /* 40px/16=2.5em */}
+            h2 {font-size: 2.5em; /* 40px/16=2.5em */}
+            ul {font-size: 1.5em; /* 40px/16=2.5em */}
+            p {font-size: 1.5em; /* 40px/16=2.5em */}
+            input {font-size: 1.5em; /* 40px/16=2.5em */}
+            button {font-size: 1.5em; /* 40px/16=2.5em */}
+
+            body {
+            background-image: url("/Route to code-2023/JavaScript/background2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            }
+
+            </style >
+
+            
+
+        <h1 text-align: center;  id="number_gue" style="color:blue"  > Number Guessing Game</h1>
+        <h2 text-align: center;  id="number_gue2" style="color:rgb(9, 9, 19)"  > How to Play ?</h2>
+        <ul text-align: center; id="list1">
+            <li>To set the minimum number and maximum number that you want to predict, 
+                add a lower bound and an upper bound to the below boxes.</li>
+            <li>Next, enter the guesstimate number and press enter key.</li>
+            <li>There are ten chances to guess: Play carefully; we'll give you tips after each attempt.</li>
+          </ul>
+        
+        <p id="paraintro"> </p>
+        
+        
+        <div>
+            <p id="min" style="display: inline-block" >Lower Bound: </p>     
+            <input type="number"  id ="inputmin" > </input> 
+            <p id="min" style="display: inline-block">Upper Bound: </p>   
+            <input type="number" id ="inputmax" > </input>    
+        </div>   
+        
+        <div>
+            <p id="para1" style="color: crimson;"></p>
+            <input type="number" id ="input1"> </input>
+            <p id="para2" style="color: crimson;"></p>
+        </div>
+
+        <div>
+            <button id ="button_restart" style="color:darkgreen;"> RESTART</button>
+            <button id="button_Exit" style="color:rgb(100, 0, 0);" onclick="closeMe()">EXIT</button>
+        </div>
+
+
+        <a href="https://www.wallpapertip.com/wmimgs/94-948582_light-colorful-background-hd.jpg">Back ground picture is from</a>
+
+
+
+        <script src="numberguess.js"> </script>
+
+    </body>
+</html>
