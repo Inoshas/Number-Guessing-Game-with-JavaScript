@@ -15,14 +15,19 @@
             input {font-size: 1.5em; /* 40px/16=2.5em */}
             button {font-size: 1.5em; /* 40px/16=2.5em */}
 
+        
+
             body {
-            background-image: url("/Route to code-2023/JavaScript/background2.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
             background-size: cover;
+            /*height: 55px;*/
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: linear-gradient(to right, rgb(241, 142, 142), rgb(235, 188, 99), rgb(0, 233, 100), rgb(184, 231, 184), rgb(169, 169, 227), rgb(202, 170, 226), violet);
             }
 
+        
+
             </style >
+           
 
             
 
@@ -32,8 +37,10 @@
             <li>To set the minimum number and maximum number that you want to predict, 
                 add a lower bound and an upper bound to the below boxes.</li>
             <li>Next, enter the guesstimate number and press enter key.</li>
-            <li>There are ten chances to guess: Play carefully; we'll give you tips after each attempt.</li>
-          </ul>
+            <li>Depend on the numbers you added your number of attempts will change: Play carefully; we'll give you tips after each attempt.</li>
+            <li>After add numbers decide what you want to pay : Easy or Hard.</li>
+            <li>If you like to see the numbers you guessed please press my guesses button after you done.</li>
+        </ul>
         
         <p id="paraintro"> </p>
         
@@ -43,21 +50,31 @@
             <input type="number"  id ="inputmin" > </input> 
             <p id="min" style="display: inline-block">Upper Bound: </p>   
             <input type="number" id ="inputmax" > </input>    
-        </div>   
+        </div> 
         
         <div>
-            <p id="para1" style="color: crimson;"></p>
+            <button id ="button_easy" style="color:rgb(232, 80, 179);"> EASY</button>
+            <button id="button_hard" style="color:rgb(179, 27, 27);" >HARD</button>
+            
+        </div>
+        
+        <div>
+            <p id="para1" style="color: rgb(42, 16, 234);"></p>
             <input type="number" id ="input1"> </input>
             <p id="para2" style="color: crimson;"></p>
         </div>
-
         <div>
-            <button id ="button_restart" style="color:darkgreen;"> RESTART</button>
-            <button id="button_Exit" style="color:rgb(100, 0, 0);" onclick="closeMe()">EXIT</button>
+        <button id="button_myguess" style="color:rgb(225, 225, 61);">MY GUESSES</button>
+        <p id="para_array_print" style="color: rgb(42, 16, 234);"></p>
+        </div>
+        <div>
+            
+            <button id ="button_restart" style="color:rgb(17, 0, 100);"> RESTART</button>
+            <button id="button_Exit" style="color:rgb(234, 49, 49);" onclick="closeMe()">EXIT</button>
         </div>
 
 
-        <a href="https://www.wallpapertip.com/wmimgs/94-948582_light-colorful-background-hd.jpg">Back ground picture is from</a>
+       
 
 
 

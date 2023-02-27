@@ -17,6 +17,7 @@
             const paraintro=document.getElementById("paraintro");
             const para1=document.getElementById("para1");
             const para2=document.getElementById("para2");
+            const para_array_print=document.getElementById("para_array_print")
   
             const number_gue= document.getElementById("number_gue");
             const number_gue2= document.getElementById("number_gue2");
@@ -29,11 +30,14 @@
             const inputmax=document.getElementById("inputmax");
             const input1=document.getElementById("input1");
   
-            const button_restart =document.getElementById("button_restart")
-            const button_Exit =document.getElementById ("button_Exit")
+            const button_restart =document.getElementById("button_restart");
+            const button_Exit =document.getElementById ("button_Exit");
+            const button_easy = document.getElementById("button_easy");
+            const button_hard =document.getElementById("button_hard");
+            const button_myguess=document.getElementById("button_myguess")
   
           // ***********************************************
-  
+         
   
               // Global variables:
               let lower_bound;
@@ -42,6 +46,9 @@
               let entered_num;
               let count=0;
               let state1 =0;
+              let array_numbers=[]
+
+              let number_of_times;
   
               let myWindow;
               
@@ -59,6 +66,8 @@
   
               // Functions for my code start here ::::::
               // compare two numbers: and return state 0,1,-1:
+
+    
   
               function compare_two_num(cor_num, ent_num){
                   if (cor_num===ent_num){
@@ -75,7 +84,7 @@
                       //console.log(count , state) 
                       return state1=2;
                       } 
-                      console.log("chcking done", count, state1)
+                      console.log("checking done", count, state1)
               }
   
   
@@ -116,7 +125,17 @@
               inputmax.addEventListener("change", (event)=>{
                   //console.log("You press enter" + inputmax.value);
                   upper_bound= Number(inputmax.value);
-                  para1.innerText = "Here we go...!!! Type a number between "+ lower_bound + " and " + upper_bound;
+                  
+                  let difference= upper_bound-lower_bound;
+                  number_of_times = Math.ceil(Math.log2(difference));
+                  button_easy.addEventListener("click", (event)=>{
+                    number_of_times =number_of_times*2;
+                    para1.innerText = "Here we go...!!! You have " +   number_of_times  + " attempts to guess the correct number. Type a number between "+ lower_bound + " and " + upper_bound 
+                    })
+                  button_hard.addEventListener("click", (event)=>{
+                    para1.innerText = "Here we go...!!! You have " +  number_of_times   + " attemps to guess the correct number. Type a number between "+ lower_bound + " and " + upper_bound 
+                  })
+                  console.log(number_of_times)
                   
                   // Define random number after get both random values:
                   correct_num = Math.floor(Math.random() * (upper_bound - lower_bound)) + lower_bound;
@@ -128,11 +147,12 @@
               // para2.innerText="Press restart button to start a new game or exit button to exit the game"
                   input1.addEventListener("change", (event)=>{ 
                       entered_num=Number(input1.value);
+                      array_numbers.push(entered_num)
                       if (isNaN(entered_num)){
                           para2.innerText="This is not a number. Please enter a number between "+ lower_bound + " and " + upper_bound   
                       }
                       else{
-                          if (state1 === 4 || count===10){
+                          if (state1 === 4 || count===number_of_times){
                       para2.innerText="Press restart button to start a new game or exit button to exit the game"
                           } 
                       else{
@@ -143,9 +163,16 @@
                   console.log("Testing start : state :" ,  state1, "count:",count)
                       }
                   }
-                   
-                        //
+   
                   });
+                  console.log(array_numbers)
+
+                  button_myguess.addEventListener("click", (event)=>{
+                   // para_array_print.innerText("Your guesses are " + array_numbers)
+                    console.log(array_numbers)
+                    
+                    ///document.write("The number you entered" + array_numbers)
+                   });
   
               }
   
