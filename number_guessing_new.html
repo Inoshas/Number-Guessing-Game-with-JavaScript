@@ -15,7 +15,7 @@
             input {font-size: 1.5em; /* 40px/16=2.5em */}
 
             .button {
-                background-color: #1c37bd; /* Green */
+                background-color: #1c37bd; 
                 border: none;
                 color: white;
                 padding: 20px;
@@ -29,6 +29,7 @@
 
        
         .button1 {border-radius: 50%;}
+        .button2 {border-radius: 50%;}
 
             button {font-size: 1.5em; /* 40px/16=2.5em */}
 
@@ -43,7 +44,7 @@
 
         
 
-            </style >
+         </style >
            
 
             
@@ -66,23 +67,23 @@
             <p id="min" style="display: inline-block" >Lower Bound: </p>     
             <input type="number"  id ="inputmin" > </input> 
             <p id="min" style="display: inline-block">Upper Bound: </p>   
-            <input type="number" id ="inputmax" > </input>    
+            <input type="number" id ="inputmax" > </input>  
+            <p id="easy_hard" style="display: inline-block" >Easy or Hard: </p>      
+            <button  class="button button1"  id ="button_easy" style="color:rgb(238, 229, 235);"> EASY</button>
+            <button class="button button2" id="button_hard" style="color:rgb(246, 240, 240);" >HARD</button>
+             
         </div> 
         
         
-        <div>
-            <button  class="button button1"  id ="button_easy" style="color:rgb(232, 80, 179);"> EASY</button>
-            <button id="button_hard" style="color:rgb(179, 27, 27);" >HARD</button>
-            
-        </div>
         
         <div>
-            <p id="para1" style="color: rgb(42, 16, 234);"></p>
+            <p id="para1" style="display: inline-block">Type your guessing number here:</p>
             <input type="number" id ="input1"> </input>
             <p id="para2" style="color: crimson;"></p>
         </div>
+
         <div>
-        <button id="button_myguess" style="color:rgb(225, 225, 61);">MY GUESSES</button>
+        <button id="button_myguess" style="color:rgb(61, 225, 86);">MY GUESSES</button>
         <p id="para_array_print" style="color: rgb(42, 16, 234);"></p>
         </div>
         <div>

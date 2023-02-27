@@ -46,7 +46,7 @@
               let entered_num;
               let count=0;
               let state1 =0;
-              let array_numbers=[]
+              let array_numbers=[];
 
               let number_of_times;
   
@@ -125,6 +125,7 @@
               inputmax.addEventListener("change", (event)=>{
                   //console.log("You press enter" + inputmax.value);
                   upper_bound= Number(inputmax.value);
+
                   
                   let difference= upper_bound-lower_bound;
                   number_of_times = Math.ceil(Math.log2(difference));
@@ -163,8 +164,9 @@
                   console.log("Testing start : state :" ,  state1, "count:",count)
                       }
                   }
-   
+                  input1.value='';
                   });
+                  
                   console.log(array_numbers)
 
                   button_myguess.addEventListener("click", (event)=>{
