@@ -168,7 +168,7 @@
                   console.log(array_numbers)
 
                   button_myguess.addEventListener("click", (event)=>{
-                   // para_array_print.innerText("Your guesses are " + array_numbers)
+                    para_array_print.innerText="Your guesses were " + array_numbers;
                     console.log(array_numbers)
                     
                     ///document.write("The number you entered" + array_numbers)

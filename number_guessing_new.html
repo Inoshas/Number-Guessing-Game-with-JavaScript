@@ -13,6 +13,23 @@
             ul {font-size: 1.5em; /* 40px/16=2.5em */}
             p {font-size: 1.5em; /* 40px/16=2.5em */}
             input {font-size: 1.5em; /* 40px/16=2.5em */}
+
+            .button {
+                background-color: #1c37bd; /* Green */
+                border: none;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                }
+
+       
+        .button1 {border-radius: 50%;}
+
             button {font-size: 1.5em; /* 40px/16=2.5em */}
 
         
@@ -21,7 +38,7 @@
             background-size: cover;
             /*height: 55px;*/
             background-color: red; /* For browsers that do not support gradients */
-            background-image: linear-gradient(to right, rgb(241, 142, 142), rgb(235, 188, 99), rgb(0, 233, 100), rgb(184, 231, 184), rgb(169, 169, 227), rgb(202, 170, 226), violet);
+            background-image: linear-gradient(to right, rgb(241, 142, 142), rgb(235, 188, 99), rgb(233, 233, 0), rgb(184, 231, 184), rgb(169, 169, 227), rgb(202, 170, 226), violet);
             }
 
         
@@ -52,8 +69,9 @@
             <input type="number" id ="inputmax" > </input>    
         </div> 
         
+        
         <div>
-            <button id ="button_easy" style="color:rgb(232, 80, 179);"> EASY</button>
+            <button  class="button button1"  id ="button_easy" style="color:rgb(232, 80, 179);"> EASY</button>
             <button id="button_hard" style="color:rgb(179, 27, 27);" >HARD</button>
             
         </div>
