@@ -1,6 +1,6 @@
 ## Number Guessing Game
 
-This includes one of the main games we played as kids. To understand and test the concepts of JavaScript, HTML, and CSS functionalities, extra functions were added to this one.
+This includes one of the main games we played as kids. To understand and test the use of JavaScript, HTML, and CSS functionalities, extra functions were added to this one.
 
 You must make a prediction about the computer-generated number using the offered feedback. The fundamental mathematical ideas behind the game can be described as follows.
 
