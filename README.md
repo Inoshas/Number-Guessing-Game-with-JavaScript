@@ -1,7 +1,40 @@
-## Number Guessing Game
+# Number Guessing Game
 
-This includes one of the main games we played as kids. To understand and test the use of JavaScript, HTML, and CSS functionalities, extra functions were added to this one.
+This is a simple number guessing game implemented in HTML, CSS, and JavaScript. The game allows you to guess a randomly generated number within a specified range. You can choose the difficulty level, enter your guesses, and keep track of your attempts.
 
-You must make a prediction about the computer-generated number using the offered feedback. The fundamental mathematical ideas behind the game can be described as follows.
+## Table of Contents
 
-In this game, you can set your own bounds by defining lower and upper limits. If the difference between the lower and upper bounds is "x," then log2(x) is the number of guesses that are needed the most. As a result, the "hard" mode will only offer log2(x) attempts and the easy mode will give you more chances to succeed (nearly double)
+- [Description](#description)
+- [How to Play](#how-to-play)
+- [Getting Started](#getting-started)
+
+
+## Description
+
+The number guessing game features the following functionality:
+
+- Set the minimum and maximum bounds for the number range.
+- Choose between easy and hard difficulty levels, which affect the number of attempts.
+- Enter your guesses and receive feedback on each attempt.
+- Keep track of your guesses with a list.
+- Restart the game or exit when you're done.
+
+## How to Play
+
+1. Set the minimum and maximum bounds for the number range.
+2. Choose a difficulty level (Easy or Hard).
+3. Start guessing the correct number.
+4. Receive feedback on each guess, including whether the correct number is higher or lower.
+5. Keep track of your guesses in a list.
+6. Restart the game or exit when you're finished.
+
+## Getting Started
+
+To run the game locally or deploy it, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Open the `number_guessing.html` file in a web browser.
+
+
+
+
